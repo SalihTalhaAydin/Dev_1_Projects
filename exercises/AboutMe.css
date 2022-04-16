@@ -1,0 +1,11 @@
+.border {
+  border: solid 5px gray;
+}
+
+.margin {
+  margin: 10px;
+}
+
+.padding {
+  padding: 10px;
+}

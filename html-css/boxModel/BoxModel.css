@@ -1,0 +1,39 @@
+:root {
+  --BorderLineColor: black;
+  --DefaultPaddingValue: 10px;
+}
+
+.padding {
+  background-color: antiquewhite;
+
+  /* padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px; */
+  padding: var(--DefaultPaddingValue);
+}
+
+.border {
+  /* border-top: solid 10px var(--BorderLineColor);
+    border-bottom: dashed 10px var(--BorderLineColor);
+    border-left: groove 10px var(--BorderLineColor);
+    border-right: outset 10px var(--BorderLineColor); */
+
+  border: solid 10px var(--BorderLineColor);
+}
+.margin {
+  /* margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  margin-right: 10px; */
+  margin: 10px;
+}
+
+.soft-edges {
+  border-radius: 1000px;
+}
+
+header {
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
