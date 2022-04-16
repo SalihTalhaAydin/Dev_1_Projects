@@ -1,0 +1,41 @@
+/* External css */
+
+/* your decided color goes here */
+:root{
+    --mainColor: aquamarine;
+    --secondColor: aquamarine;
+    --thirdColor: aquamarine;
+}
+
+/* everything */
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* SIZES */
+
+img{
+    height: 20%;
+    width: 20%;
+}
+
+/* COLORS */
+.main-paragraph {
+  color: aliceblue !important;
+}
+
+.main-header {
+  size: 100px;
+}
+
+h1 {
+  color: aquamarine;
+}
+
+p {
+  color: royalblue;
+}
+
+.main-header, .main-paragraph, h1, p{
+    background-color:var(--mainColor);
+}
