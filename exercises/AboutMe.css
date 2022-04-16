@@ -1,11 +1,78 @@
+:root {
+  --BGcolor: rgba(62, 193, 195, 0.235);
+  --mainTextColor: black;
+  --secondaryTextColor: rgba(84, 85, 85, 0.5);
+  --thirdTextColor: rgba(0, 0, 0, 0.862);
+  --forthTextColor: rgba(194, 33, 170, 0.9);
+  --borderColor: rgb(0, 0, 0);
+  --secondaryBorderColor: rgb(67, 89, 232);
+  --h2Color: gray;
+}
+
+/* Clases */
+
+.center {
+  margin: auto;
+  width: 50%;
+  border: 3px solid var(--secondaryBorderColor);
+  padding: 10px;
+}
+
 .border {
-  border: solid 5px gray;
+  border: solid 5px var(--borderColor);
 }
 
 .margin {
   margin: 10px;
 }
 
-.padding {
+.default-padding {
   padding: 10px;
+}
+
+.text-padding{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/* tags */
+
+body {
+  font-size: 25px;
+  font-family: "Times New Roman", Times, serif;
+  background-color: var(--BGcolor);
+  color: var(--mainTextColor);
+}
+
+header {
+  font-weight: 1200;
+  font-size: 60px;
+  color: var(--thirdTextColor);
+  font-family: "Updock", cursive;
+}
+
+figcaption {
+  color: var(--forthTextColor);
+  font-weight: 900;
+  text-decoration: underline;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: 900;
+  text-decoration: underline;
+  color: var(--h2Color);
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }

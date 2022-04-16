@@ -1,0 +1,57 @@
+:root {
+  --defTextSize: 32px;
+}
+.hovering:hover {
+  background-color: antiquewhite;
+  font-size: 105%;
+}
+
+.hovering p:hover {
+  background-color: cyan;
+  font-size: 105%;
+}
+
+/* default li stuff */
+ul li {
+  color: rgb(18, 63, 103);
+}
+
+ul li:first-child {
+  color: pink;
+}
+
+ul li:last-child {
+  color: gray;
+}
+
+ol li:nth-child(even) {
+  color: bisque;
+}
+ol li:nth-child(odd) {
+  color: rgb(158, 114, 59);
+}
+
+a:link {
+  color: black;
+}
+
+a:visited {
+  color: red;
+}
+
+/* When you click */
+a:active {
+  color: green;
+}
+
+a:hover {
+  /* color: lightgray; */
+  opacity: 0.3;
+  font-size: 105%;
+}
+
+body {
+  margin: 5%;
+  padding: 5%;
+  font-size: 300%;
+}
