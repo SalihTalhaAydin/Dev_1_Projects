@@ -8,9 +8,25 @@
 
 .absolute{
     position: absolute;
-    left: 10%;
 }
 
 .fixed{
     position: fixed;
+    bottom: 10px;
+    background-color: aquamarine;
+    /* z-index: 9; */
+}
+
+.sticky{
+    position: sticky;
+    background-color: aqua;
+}
+
+.static, .relative, .absolute, .fixed, .sticky{
+    display: inline;
+    left: 10%;
+    top: 10%;
+    font-size: x-large;
+    text-decoration: underline;
+    font-weight: 900;
 }

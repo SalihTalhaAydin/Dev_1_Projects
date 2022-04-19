@@ -1,0 +1,7 @@
+.absolute{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+    z-index: 9;
+}
+
