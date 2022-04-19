@@ -1,14 +1,14 @@
-.absolute{
-    position: absolute;
+.positioning{
     left: 100px;
     top: 100px;
 }
 
 img{
+    position: absolute;
     width: 200px
 }
 
-.hovering img:hover{
+img:hover{
     z-index: 9;
 }
 
