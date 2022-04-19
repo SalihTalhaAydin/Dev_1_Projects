@@ -1,0 +1,16 @@
+.static{
+    position: static;
+}
+
+.relative{
+    position: relative;
+}
+
+.absolute{
+    position: absolute;
+    left: 10%;
+}
+
+.fixed{
+    position: fixed;
+}
