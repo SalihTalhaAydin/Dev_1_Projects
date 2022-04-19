@@ -19,15 +19,23 @@
 }
 
 .border {
-  border: solid 5px var(--borderColor);
+  border: solid 3px var(--borderColor);
 }
 
 .margin {
-  margin: 10px;
+  margin: 30px;
+}
+
+.auto-margin-center {
+  margin: auto;
+  width: 50%;
 }
 
 .default-padding {
-  padding: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 25px;
+  padding-right: 25px;
 }
 
 .text-padding{
@@ -64,11 +72,11 @@ article p span:hover{
   color: brown;
 }
 
-article p span:nth-of-type(1), span::before{
+article p span::before{
   content: "{";
 }
 
-article p span:nth-of-type(1), span::after{
+article p span::after{
   content: "}";
 }
 
@@ -77,6 +85,10 @@ figcaption {
   font-weight: 900;
   text-decoration: underline;
   text-align: center;
+}
+
+figcaption:hover{
+  font-size: larger;
 }
 
 h1 {
@@ -94,21 +106,21 @@ h2 {
   color: var(--h2Color);
 }
 
-ol li:nth-child(even){
+ol li:nth-child(even), ol li a:nth-child(even){
   color:var(--forthTextColor);
   background-color: rgb(198, 198, 198);
 }
 
-ol li:nth-child(odd){
+ol li:nth-child(odd) , ol li a:nth-child(odd){
   background-color: rgb(130, 128, 128);
 }
 
-ol li:hover{
+ol li:hover, ol li a:hover{
   color: coral;
   font-size: larger;
 }
 
-ol li:active{
+ol li:active, ol li a:active{
   color: blueviolet;
 }
 
