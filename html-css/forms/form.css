@@ -1,0 +1,37 @@
+:root{
+    --backgroundColor: rgba(37, 102, 177, 0.461);
+    --borderColor: black;
+}
+
+body{
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+div{
+    margin: 10px;
+    border: solid 2px var(--borderColor);
+    padding: 10px;
+    background-color: var(--backgroundColor);
+}
+
+label,p{
+    padding: 5px;
+    background-color: aliceblue;
+    margin-right: 10px;
+    border: solid 1px var(--borderColor);
+}
+
+label::after{
+    content: ":";
+}
+
+h1{
+    margin-top: 0px;
+    padding-top: 5px;
+    margin-bottom: 50px;
+    background-color: white;
+    position: sticky;
+    top: 3%;
+}

@@ -1,4 +1,8 @@
 th, td{
     border: dotted 2px black;
     padding: 10px;
+   
+}
+table{
+    background-color: rgb(92, 144, 217);
 }
