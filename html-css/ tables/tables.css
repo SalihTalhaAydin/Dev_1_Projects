@@ -1,0 +1,42 @@
+/* thead{
+    background-color: rgb(45, 76, 76);
+} */
+
+tfoot{
+     background-color: rgb(46, 199, 199);
+}
+/* 
+tbody{
+    background-color: rgb(186, 117, 33);
+} */ 
+
+table, tr, th,td{
+    border: solid 2px black;
+    /* makes everything collapse */
+    border-collapse: collapse;
+    /* border-spacing: 50px; */
+    margin: 2px;  
+    padding: 2x;
+
+    /* position: relative;
+    left: 10px; */
+
+    text-align: right;
+    font-size: small;
+
+}
+
+/* Overwrites all*/
+th,td{
+    text-align: center;
+    margin: 10px;  
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    opacity: 0.5;
+}
+
+tr td:nth-child(6)::after{
+    content: pounds;
+}
