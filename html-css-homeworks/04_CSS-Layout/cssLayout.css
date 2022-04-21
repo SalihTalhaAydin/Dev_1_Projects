@@ -1,0 +1,45 @@
+:root{
+    --navBGColor: rgb(0, 166, 255)
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: black;
+    padding: 20px;
+}
+
+article{
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    color: white;
+}
+
+div{
+    margin-top: 0;
+    background-color: var(--navBGColor);
+    position: sticky;
+    top: 10px;
+    height: 58px;
+    text-align: center;
+    
+}
+
+a:hover{
+    background-color: rgba(0, 166, 255, 0.51);
+}
+
+a{
+    display: inline-block;
+    background-color: var(--navBGColor);
+    padding: 20px;
+    width: 120px;
+    margin: 0;
+    text-decoration: unset;
+}
