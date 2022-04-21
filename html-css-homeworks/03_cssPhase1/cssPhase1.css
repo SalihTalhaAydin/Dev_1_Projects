@@ -1,0 +1,31 @@
+header,article  {
+  padding: 10px;
+}
+header{
+    background-color: orangered;
+}
+
+article{
+    margin: 10px;
+}
+
+footer{
+    text-align: center;
+}
+
+img{
+  width: 10%;
+  height: 10%;
+}
+li{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+span{
+    color: orange;
+}
+
+ul{
+    border: solid 1px black;
+}
