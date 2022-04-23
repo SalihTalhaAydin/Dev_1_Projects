@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+
+header, footer, article, aside, nav{
+    padding: 10px;
+    flex-grow: 3;
+}
+
+article, aside, nav{
+    height: 200px;
+}
+
+header, footer{
+    background-color: orange;
+}
+
+.flex, .second-flex{
+    display: flex;
+}
+
+.flex{
+    border: solid 1px;
+    flex-direction: column;
+}
+
+.second-flex{
+    
+    flex-wrap: wrap;
+}
+
+aside{
+    background-color: bisque;
+}
+
+ nav{
+     background-color: lightgreen;
+ }
+
+ article{
+     flex-grow: 10;
+ }
