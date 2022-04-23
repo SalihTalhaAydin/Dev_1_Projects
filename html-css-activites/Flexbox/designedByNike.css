@@ -1,7 +1,8 @@
 :root {
   --BGColor: rgb(0, 0, 0);
-  --headerColor: rgb(17, 0, 255);
-  --headerBorderColor: white;
+  --headerColor: #113cfc;
+  --headerBorderColor: #69dadb;
+  --defaultTextColor: rgb(158, 158, 158);
 }
 
 * {
@@ -9,20 +10,23 @@
 }
 
 body {
-  color: aliceblue;
-  background-color: var(--BGColor);
+  color: var(--defaultTextColor);
+  font-size: 20px;
+  background-color: black;
+
   display: flex;
   padding: 0;
   margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
-  
-
   margin: 0;
   height: 100vh;
   width: 100vw;
-
+  background: rgba(0, 0, 0, 0.902)
+    url("https://images.unsplash.com/photo-1519744792095-2f2205e87b6f?ixid=MnwxMjA3fDB8MHxwaG90[…]GVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1171&q=80");
+  background-blend-mode: multiply;
   display: flex;
   text-align: center;
   flex-direction: column;
@@ -31,12 +35,18 @@ header {
 }
 
 h1 {
+  font-family: Arial, Helvetica, sans-serif;
   margin: 0px 80px 0px 80px;
   padding: 30px;
   border: solid 4px var(--headerBorderColor);
-
+  box-shadow: 0 0 10px var(--headerBorderColor);
+  /*   
   font-size: 50px;
-  color: var(--headerColor);
+  color: var(--headerColor); */
+  font-size: 72px;
+  background: -webkit-linear-gradient(#0084ff, #0a227a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .boxes {
@@ -65,34 +75,39 @@ img {
   height: 60%;
   width: 60%;
 }
-article{
-    padding: 50px 20px 70px 20px;
+article {
+  padding: 50px 20px 70px 20px;
 }
 
-.article-boxes{
-    display: flex;
+.article-boxes {
+  display: flex;
 }
 
-.article-boxes ul{
-    width: 40vw;
+.article-boxes ul {
+  width: 40vw;
 }
 
-footer{
-    padding: 30px;
-    background-color: white;
-    color: black;
-    height: 250px;
+footer {
+  padding: 30px;
+  background-color: white;
+  color: black;
+  height: 350px;
 }
 
-a{
-    padding: 10px;
-    text-align: center;
-    background-color: rgb(169, 169, 230);
-    text-decoration: unset;
-    font-weight: 900;
-    font-family: Arial, Helvetica, sans-serif;
+a {
+  display: inline-block;
+  padding: 15px 25px 15px 25px;
+  background-color: #1597e5;
+  text-decoration: unset;
+  font-weight: 900;
+  color: black;
+  border-radius: 4px;
 }
 
-a:hover{
-    opacity: 0.7;
+a:hover {
+  opacity: 0.7;
+}
+
+p {
+  font-family: "Avenir";
 }
