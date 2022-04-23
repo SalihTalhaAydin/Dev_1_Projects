@@ -33,7 +33,7 @@ body {
   margin: auto;
   /* background-color: var(--calulatorBGColor); */
   background: rgb(12,45,72);
-background: linear-gradient(90deg, rgba(12,45,72,1) 0%, rgba(46,139,192,1) 14%, rgba(177,212,224,1) 100%);
+background: linear-gradient(75deg, rgb(34, 97, 148), rgba(46,139,192,1), rgba(177,212,224,1));
 }
 
 .flex {
