@@ -67,3 +67,14 @@ div {
     margin: 10px;
     background-color: var(--defaultButtonColor);
 }
+
+.flex div:hover{
+    opacity: 0.7;
+}
+
+.flex div:active{
+    opacity: 1.3;
+}
+
+
+
