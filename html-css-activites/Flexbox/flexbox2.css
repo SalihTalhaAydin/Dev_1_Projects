@@ -1,0 +1,69 @@
+*{
+    box-sizing: border-box;
+}
+
+:root{
+    --color1: rgb(255, 85, 0);
+    --color2: rgb(61, 206, 61);
+    --color3: rgb(95, 163, 251);
+}
+
+.container{
+    /* height: 400vh;
+    height: 400vh; */
+
+    height: 200px;
+    width: 600px;
+    display: flex;
+
+    /* Takes display as row or column */
+    flex-direction: row;
+    
+    /* Wraps up everything */
+    /* flex-wrap: wrap; */
+    
+    /* border: solid 2px; */
+    
+    /* Gives spaces */
+    /* justify-content:space-between; */
+
+    /* stretching to down */
+    align-items: stretch;
+
+    align-items: center;
+    align-content: center;
+}
+
+.items{
+    width: calc(600px / 3); 
+    height: calc(200px / 1);
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.nested-items{
+    
+    height: calc(200px / 1);
+    font-size: 30px;
+    color: white;
+    padding: 10px;
+}
+
+.container div:first-child{
+    background-color: var(--color1);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.container div:nth-child(2){
+    background-color:var(--color2);
+}
+
+
+
+.container div:last-child{
+    background-color: var(--color3);
+}
+

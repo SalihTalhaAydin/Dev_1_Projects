@@ -1,0 +1,57 @@
+.container{
+    /* height: 400vh;
+    height: 400vh; */
+
+    height: 400px;
+    width: 400px;
+    display: flex;
+
+    /* Takes display as row or column */
+    flex-direction: row;
+    
+    /* Wraps up everything */
+    flex-wrap: wrap;
+    
+    border: solid 2px;
+    
+    /* Gives spaces */
+    justify-content:space-between;
+
+    /* stretching to down */
+    align-items: stretch;
+
+    /*  */
+    align-items: center;
+    align-content: center;
+}
+
+.items{
+    background-color: aqua;
+    /* flex-grow: 0.1; */
+
+    /* Width */
+    /* flex-basis: 100%; */
+
+    /* Flex grow, flex shrink, flex basics */
+    flex: 1, 1, 100%;
+
+    /* flex-shrink: ; */
+
+    /* width: 90px; */
+    /* width: calc(400px / 5); 
+    height: calc(400px / 5); */
+}
+
+.container div:first-child{
+    /* flex-grow: 0.3; */
+
+    /* font-size: 60px;
+    order: 4; */
+}
+
+.container div:last-child{
+    /* flex-grow: 0.2; */
+
+    /* font-size: 8px; */
+}
+

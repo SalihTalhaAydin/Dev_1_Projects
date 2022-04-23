@@ -1,0 +1,30 @@
+img{
+    
+    border: solid 3px;
+    display: inline;
+    border-radius: 30%;
+    height: 150px;
+    width: 150px;
+}
+
+.move{
+    border-left: solid 2px gray;
+    text-align: center;
+    display: inline-block;
+    position: relative;
+    left: 150px;
+    top: -20px;
+}
+
+header , .move{
+    margin: 20px;
+    padding: 30px;
+    
+}
+
+header{
+    border: solid 2px gray;
+    border-radius: 30px;
+    height: 50%;
+}
+
