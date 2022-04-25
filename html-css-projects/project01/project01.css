@@ -1,30 +1,148 @@
-img{
-    
-    border: solid 3px;
-    display: inline;
-    border-radius: 30%;
-    height: 150px;
-    width: 150px;
+* {
+  box-sizing: border-box;
 }
 
-.move{
-    border-left: solid 2px gray;
-    text-align: center;
-    display: inline-block;
-    position: relative;
-    left: 150px;
-    top: -20px;
+body {
+    width: 80vw;
+   margin: 0px 10vw 0px 10vw;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(147, 168, 204);
+  
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-header , .move{
-    margin: 20px;
-    padding: 30px;
-    
+header {
+  /* The image used */
+  background: rgba(0, 0, 0, 0.743)
+    url("https://wallpaperaccess.com/full/681882.jpg");
+  background-blend-mode: multiply;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  height: 350px;
+  width: 80vw;
+  min-width: 850px;
 }
 
-header{
-    border: solid 2px gray;
-    border-radius: 30px;
-    height: 50%;
+header img {
+  border-radius: 50%;
+  margin: 50px;
 }
 
+h1,
+h2 {
+  margin: 10px;
+  color: white;
+}
+
+h1 {
+  font-size: 60px;
+  margin-top: 100px;
+  margin-left: 10vw;
+}
+
+h2 {
+  margin-left: 10vw;
+}
+
+h3 {
+  border-bottom: solid 5px;
+  margin-top: 60px;
+  padding-top: 10px;
+}
+
+
+
+article p, article li{
+    margin-left: 10px;
+}
+
+
+img {
+  width: 250px;
+}
+
+.resume-body {
+  display: flex;
+}
+
+.part1,
+.part2 {
+  padding: 30px 50px 30px 50px;
+}
+
+.part1 {
+  background-color: white;
+  width: 350px;
+  min-width: 350px;
+}
+
+.part2 {
+  width: calc(100vw - 350px);
+  background-color: lightgray;
+  min-width: 500px;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+}
+
+.fa {
+  padding: 5px 0px 5px 0px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-rss {
+  background: #ff6600;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-stumbleupon {
+  background: #eb4924;
+  color: white;
+}
+
+.references{
+display: flex;
+}
+
+.references img{
+    margin-top: 10px;
+    width: 80px;
+    border-radius: 50px;
+    border: solid 1px gray;
+}
+
+.references span{
+    padding: 10px;
+    align-self: center;
+}
+
+li{
+    margin-top: 5px;
+}
