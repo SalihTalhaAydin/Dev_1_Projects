@@ -8,26 +8,77 @@
   }
 }
 
-@media screen and (min-width: 800px){
-    body{
-        display: flex;
-    }
+@keyframes getBigger {
+  0% {
+    height: 120%;
+    width: 120%;
+  }
 }
 
-body {
-  padding: 20vw 25vw;
-  animation: changeColor 10s infinite;
+@media screen and (max-width: 800px) {
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  .offers {
+    background-color: white;
+    padding: 10px;
+    display: grid;
+
+    border-radius: 10px;
+    border: solid 1px;
+    width: 50%;
+    min-width: 100vw;
+  }
+
+  .offer {
+    border: solid 1px blue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+
+  
+
+
+  .offer:nth-child(2) {
+    background-color: rgb(0, 0, 181);
+    color: white;
+  }
 }
 
-.offers {
-  background-color: white;
-  padding: 10px;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  border-radius: 10px;
-  border: solid 1px;
-  width: 50%;
-  min-width: 800px;
+@media screen and (min-width: 800px) {
+  body {
+    padding: 20vw 25vw;
+    animation: changeColor 10s infinite;
+  }
+
+  .offers {
+    background-color: white;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 10px;
+    border: solid 1px;
+    width: 50%;
+    min-width: 800px;
+  }
+
+  .offer:nth-child(2) {
+    background-color: rgb(0, 0, 181);
+    color: white;
+  }
+
+  .offer:nth-child(2):hover {
+    animation: getBigger 1s infinite;
+  }
 }
 
 .offer {
@@ -51,4 +102,12 @@ input[type="submit"] {
   display: inline-block;
 
   border-radius: 4px;
+}
+
+.offers .offer div{
+    padding: 10px 0px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
 }
