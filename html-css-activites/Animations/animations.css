@@ -1,0 +1,54 @@
+* {
+  box-sizing: border-box;
+}
+
+@keyframes changeColor {
+  0% {
+    background-color: rgba(214, 70, 70, 0.847);
+  }
+}
+
+@media screen and (min-width: 800px){
+    body{
+        display: flex;
+    }
+}
+
+body {
+  padding: 20vw 25vw;
+  animation: changeColor 10s infinite;
+}
+
+.offers {
+  background-color: white;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  border-radius: 10px;
+  border: solid 1px;
+  width: 50%;
+  min-width: 800px;
+}
+
+.offer {
+  border: solid 1px blue;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  margin: 5px;
+}
+
+.sign-up {
+  border: 1px solid rgb(0, 94, 255);
+  background-color: white;
+  color: rgb(0, 94, 255);
+  display: inline-block;
+}
+
+input[type="submit"] {
+  padding: 12px 20px;
+  margin: 20px 12px;
+  display: inline-block;
+
+  border-radius: 4px;
+}
