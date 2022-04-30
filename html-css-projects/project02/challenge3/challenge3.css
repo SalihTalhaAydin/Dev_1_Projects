@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  display: grid;
+  grid-template-areas:
+    "article content content content content"
+    "article big-content big-content mid-content1 mid-content2"
+    "content big-content big-content mid-content1 mid-content2"
+    "content content content . .";
+}
+
+.article {
+  grid-area: article;
+}
+
+.content {
+  grid-area: content;
+}
+
+.big-content {
+  grid-area: big-content
+}
+
+.mid-content1 {
+  grid-area: mid-content1;
+}
+
+.mid-content2 {
+  grid-area: mid-content2;
+}

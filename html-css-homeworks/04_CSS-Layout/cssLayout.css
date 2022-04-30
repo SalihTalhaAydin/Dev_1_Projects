@@ -1,5 +1,10 @@
 :root{
-    --navBGColor: rgb(0, 166, 255)
+    --navBGColor: rgb(0, 166, 255);
+}
+
+.grid{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
 body{
@@ -22,17 +27,16 @@ h1{
 }
 
 div{
-    margin-top: 0;
+ 
     background-color: var(--navBGColor);
     position: sticky;
-    top: 10px;
-    height: 58px;
-    text-align: center;
+   
+ 
     
 }
 
 a:hover{
-    background-color: rgba(0, 166, 255, 0.51);
+    background-color: rgba(0, 166, 255, 0.446);
 }
 
 a{

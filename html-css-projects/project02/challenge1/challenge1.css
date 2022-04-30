@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    
+}
+
+h3{
+    text-align: center;
+}
+
+
+h4{
+    text-align: center;
+
+}
+nav{
+    text-align: center;
+}
+
+a, a:visited{
+    color: aqua;
+    font-size: 15px;
+margin: 0px 10px 0px 10px;
+text-decoration: unset;
+
+}
