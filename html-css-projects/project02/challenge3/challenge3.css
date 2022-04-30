@@ -67,8 +67,12 @@ li{
 }
 
 .mid-content1 {
-  grid-area: 2/ 4 / span 2 / span 1;
-  border-image: url(https://images.unsplash.com/photo-1504293538349-0be9a181d474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGlwaG9uZXxlbnwwfHwwfHw%3D&w=1000&q=80);
+  grid-area: 2/ 4 / span 2 / span 2;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE2XZqLuHZjljWiLRZiHB_jCE5Szu_2GfgKw&usqp=CAU);
+  background-position: left;
+  background-repeat: repeat;
+  background-size:contain;
+  object-fit: cover;
 }
 
 .mid-content2 {
