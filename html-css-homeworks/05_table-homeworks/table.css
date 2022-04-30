@@ -38,7 +38,9 @@ table{
 }
 
 
-
-tr:nth-child(even){
-    border-top: solid 0.5px gray !;
+thead{
+    color: white;
+}
+tr:nth-of-type(even){
+    border-top: solid 3px white ;
 }
