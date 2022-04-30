@@ -5,33 +5,83 @@
 body {
   margin: 0;
   padding: 0;
+
 }
 
 .page {
   display: grid;
-  grid-template-areas:
-    "article content content content content"
-    "article big-content big-content mid-content1 mid-content2"
-    "content big-content big-content mid-content1 mid-content2"
-    "content content content . .";
+  grid-template-columns: repeat(5, 400px);
+  grid-template-rows: repeat(4, 25vh);
+ 
+}
+.page > *{
+  background-color: aliceblue;
+  border: solid 1px;
+  background-image: url(https://i.pinimg.com/originals/a0/6d/70/a06d70d4f39f84b6ed0de5d6a52d7e7f.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+  padding: 30px;
 }
 
 .article {
-  grid-area: article;
+  grid-row: 1/span 2;
+  filter: none;
+  background-image: none;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
 }
 
-.content {
-  grid-area: content;
+h1, ol, ul{
+  margin: 30px;
 }
+span{
+  color: red;
+}
+li{
+  margin-top: 10px;
+  border-bottom: solid red 1px;
+  
+}
+
+
+
+.article div:nth-child(1){
+  background-color: rgb(225, 223, 100);
+}
+
+.article div:nth-child(2){
+  background-color: rgb(193, 37, 37);
+  color: white;
+}
+
+
 
 .big-content {
-  grid-area: big-content
+  background-image: url(https://wallpaperaccess.com/full/220675.jpg);
+  grid-area: 2/ 2 / span 2 / span 2;
+  
 }
 
 .mid-content1 {
-  grid-area: mid-content1;
+  grid-area: 2/ 4 / span 2 / span 1;
+  border-image: url(https://images.unsplash.com/photo-1504293538349-0be9a181d474?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjBhbmQlMjB3aGl0ZSUyMGlwaG9uZXxlbnwwfHwwfHw%3D&w=1000&q=80);
 }
 
 .mid-content2 {
-  grid-area: mid-content2;
+  grid-area: 2/ 5 / span 2 / span 1;
+}
+
+h2{
+  color: white;
+  filter: none;
+}
+
+p{
+  color: aqua;
+  
+  
 }
