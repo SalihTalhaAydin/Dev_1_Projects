@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="form.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="form">
+      <h1>Create Account</h1>
+      <nav>
+        <a href="#" class="fa fa-google"></a>
+        <a href="#" class="fa fa-facebook"></a>
+        <a href="#" class="fa fa-twitter"></a>
+        <a href="#" class="fa fa-vimeo"></a>
+      </nav>
+
+      <h4>or use your email for registration:</h4>
+
+      <form action="/action_page.php">
+        <input
+          type="text"
+          id="fname"
+          name="firstname"
+          placeholder="Your name.."
+        />
+
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your email.."
+        />
+
+        <input
+          type="text"
+          id="lname"
+          name="lastname"
+          placeholder="Your password.."
+        />
+
+        <div class="terms-and-conditions">
+            <input type="checkbox" name="terms" id="" />
+            <label for="terms-text"
+              >I agree to the
+              <span>Terms</span>
+              and
+              <span>Privacy Policy.</span>
+            </label>
+        </div>
+        
+        <div>
+          <input class="sign-up" type="submit" value="Sign up" />
+          <input class="sign-in" type="submit" value="Sign in" />
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
