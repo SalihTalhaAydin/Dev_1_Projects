@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     --navBGColor: rgb(0, 166, 255);
 }
@@ -27,10 +31,10 @@ h1{
 }
 
 div{
- 
+    margin-top: 0px;
     background-color: var(--navBGColor);
     position: sticky;
-   
+    top: 10px;
  
     
 }
@@ -40,6 +44,7 @@ a:hover{
 }
 
 a{
+    text-align: center;
     display: inline-block;
     background-color: var(--navBGColor);
     padding: 20px;
