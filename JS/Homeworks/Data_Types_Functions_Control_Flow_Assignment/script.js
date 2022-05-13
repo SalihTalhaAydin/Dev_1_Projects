@@ -74,7 +74,6 @@ var tellFortune  = function(numberOfChildren, partnerName, geographicLocation, j
 }
 
 function calculateDogAge(){
-    
 }
 
 
