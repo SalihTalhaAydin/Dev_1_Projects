@@ -1,4 +1,5 @@
 
+//-----------------METHODS-----------------
 function printRecipe(title, servings, ingredients){
     console.log(title);
     console.log("Serves: " + servings);
@@ -73,10 +74,37 @@ var tellFortune  = function(numberOfChildren, partnerName, geographicLocation, j
     console.log("You will be a " + jobTitle + " in " + geographicLocation + ", and married to " + partnerName + " with " + numberOfChildren + " kids.");
 }
 
-function calculateDogAge(){
+function calculateDogAge(puppyAge, conversionRate){
+   console.log(conversionRate === undefined ?  
+    "Your doggie is "+(puppyAge * 7)+" years old in dog years!":
+    "Your doggie is "+(puppyAge * conversionRate)+" years old in dog years!");
+}
+
+function calculateSupply(age, amountPerDay, maxAge){
+    
+    console.log(maxAge === undefined ?  
+        "You will need "+ parseInt(amountPerDay) * 365 * (82 - age) + " to last you until the ripe old age of " + age:
+        "You will need "+ parseInt(amountPerDay) * 365 * (maxAge - age) + " to last you until the ripe old age of " + age);
+}
+
+var calcCircumfrence = function(radius){
+    console.log("The circumference is " + 2*radius*Math.PI + ".")
+}
+
+var calcArea = function(radius){
+    console.log("The area  is " + radius*radius*Math.PI + ".")
+}
+
+function celsiusToFahrenheit(celsius){
+    console.log(celsius + "°C is "+ ((celsius * 9/5) + 32) +"°F");
+}
+
+function fahrenheitToCelsius(fahrenheit){
+    console.log(fahrenheit + "°F is " + ((fahrenheit - 32) * 5/9)  + "°C.");
 }
 
 
+//-----------------EXECUTIONS-----------------
 console.log("");
 console.log("Task 1");
 printRecipe("Mole", 2, ["cinnamon", "cumin", "cocoa"]);
@@ -126,3 +154,25 @@ tellFortune(82, "round chicken", "mars", "hair collector");
 
 console.log("");
 console.log("Task 9");
+calculateDogAge(6);
+calculateDogAge(6, 7);
+calculateDogAge(6, 4);
+
+console.log("");
+console.log("Task 9");
+calculateSupply(22, 54);
+calculateSupply(22, 54, 82);
+calculateSupply(22, 54, 100);
+
+
+console.log("");
+console.log("Task 10");
+calcCircumfrence(5);
+calcArea(5);
+
+console.log("");
+console.log("Task 11");
+fahrenheitToCelsius(60);
+celsiusToFahrenheit(32);
+
+
